@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+     .tolf{
+        top:30%;
+        left:20%; 
+     }
+    canvas{
+        border: 3px solid black;
+        height: 100%;
+        width: 60%;
+        /* background-color:green; */
+       
+    }
+</style>
+<body>
+    <div class="tolf" >
+    <canvas id="can">
+
+    </canvas>
+</div>
+</body>
+<script>
+    var can=document.getElementById('can');
+    var j=can.getContext("2d");
+    // j.moveTo(80,60);//x1,y1;
+    // j.lineTo(160,60);//x2,y2;
+    // j.moveTo(160,60);
+    // j.lineTo(120,120);
+    // j.moveTo(80,60);
+    // j.lineTo(120,120);
+    // j.strokeStyle="green";
+    // j.lineWidth=3;
+
+    // j.stroke();
+    // j.beginPath();
+    // j.arc(130,60,40,0,2*Math.PI);//aarc(x,y,r,strat,stop);
+    // j.lineWidth=2;
+    // j.stroke();
+    //  j.fillStyle="orange";
+  
+    //  var g=j.createLinearGradient(0,0,150,150); //creatLinearGradient(x,y,x1,y1);
+    // g.addColorStop(0,"green");//addColorStop(0,"color-value");
+    // g.addColorStop(0.5,"orange");//addColorStop(0,"color-value");
+    // j.fillStyle=g;
+    // j.fillRect(0,0,140,110); //x-axis, y-axis width ,height; 
+    // j.stroke();
+    var img=new Image();
+    img.onload=function()
+    {
+       j.drawImage(img,20,20); // drawImage(Image,dx,dy);
+    }
+    img.src='E:\Image\bst img\Boeing 747 1366 x 768 HDTV.jpeg';
+</script>
+
+</html>
